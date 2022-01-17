@@ -1,4 +1,2 @@
-(X) Nothing
-(C) Vehicle
-(D) Truck
-(F) Flag
+1
+0
