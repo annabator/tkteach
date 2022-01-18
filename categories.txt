@@ -1,2 +1,3 @@
-1
-0
+1 = yes (path. fib. present)
+0 = no (no path. fib.)
+U = unsure

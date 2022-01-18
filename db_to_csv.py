@@ -13,6 +13,11 @@ for index, row in im_names.iterrows():
     im_names.at[index, 'imageName'] = fname
     print(fname)
 
+# extract actual labels (0,1,U) from cat names
+for index, row in cat_names.iterrows(): 
+    label = row['categoryName'][0]
+    cat_names.at[index, 'categoryName'] = label
+
 names_join = pd.merge(assignments, im_names, left_on='image_id', right_on='id', how='left')
 all_join = pd.merge(names_join, cat_names, left_on='category_id', right_on='id', how='left')
 

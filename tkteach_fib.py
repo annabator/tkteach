@@ -70,7 +70,7 @@ class tkteach:
 
 		# Create GUI elements:
 
-		self.titleLabel = tk.Label(master, text="tkteach version 002")
+		self.titleLabel = tk.Label(master, text="Is this pathological fibrosis?")
 		self.titleLabel.pack()
 
 		# BOTTOM "STATUS BAR" VVVVVVVVVVVVVVVVVVVVVVVVV
@@ -283,18 +283,6 @@ class tkteach:
 			self.zoomOut()
 			time.sleep(0.05)
 			self.zoomOutButton.config(relief=tk.RAISED)
-		# this is a very hard-coded solution but oh well
-		# elif key.char == CAT_POS_1: # self.categories[0]?
-		# 	print(self.keyBindings.index(key.char.lower()))
-		# 	self.categoriesListbox.selection_set(self.keyBindings.index(key.char.lower()))
-		# 	self.saveImageCategorization()
-		# 	self.nextImage()
-
-		# elif key.char == CAT_NEG_0:
-		# 	print(self.keyBindings.index(key.char.lower()))
-		# 	self.categoriesListbox.selection_set(self.keyBindings.index(key.char.lower()))
-		# 	self.saveImageCategorization()
-		# 	self.nextImage()
 
 		else:
 			#Check if this is an ad-hoc keybind for a category selection...
